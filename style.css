@@ -74,7 +74,11 @@ button {
 }
 
 output {
+    border: white solid 5px;
+    background-color: green;
     display: flex;
+    width: 100%;
+    flex: 1;
     align-items: center;
     justify-content: center;
 }
@@ -82,13 +86,12 @@ output {
 /* TODO - Sort placement of output password fields */
 .passwordOutput {
     background-color: var(--very-dark-grey);
-    width: 200px;
+    width: 40%;
     height: 40px;
     top: 190px;
+    display: flex;
     position: relative;
     border-radius: 6px;
-    clear: both;
-    display: flex;
     align-items: center;
     justify-content: center;
     margin: 10px;
@@ -96,10 +99,13 @@ output {
     margin-right: 40px;
 }
 
-.passwordOne {
-    float: left;
+.output p {
+    color: var(--green);
 }
-.passwordTwo {
-    margin-left: 160px;
-    float: right;
-} 
+
+button {
+    background-color: var(--green);
+    border: var(--green);
+    border-radius: 6px;
+    color: white;
+}

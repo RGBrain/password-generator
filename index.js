@@ -3,19 +3,28 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 // When the button is clicked
 
+var passwordOne = document.getElementById('passwordOne');
+var passwordTwo = document.getElementById('passwordTwo');
+
 //Make 2 random strings that are 15 digits long
-let randomPasswordOne;
-let randomPassworkTwo;
+let passwords = ["",""];
 let passwordLength = 15
+let numberOfPasswords = 2;
 
 function getRandomCharacter() {
     let character = characters[Math.floor(Math.random() * characters.length)];
     return character;
 }
-console.log(getRandomCharacter());
 
-// for (i = 0); i < passwordLength.length(); i++ {
-//     randomPasswordOne += 
-// }
+for (i=0; i < 2; i++) {
+    for (j=0; j < passwordLength; j++) {
+        passwords[i] += getRandomCharacter()
+    }
+}
 
-//output strings to fields
+passwordOne.style.color = "#4ADF86";
+passwordTwo.style.color = "#4ADF86";
+passwordOne.textContent = passwords[0];
+passwordTwo.textContent = passwords[1];
+
+
