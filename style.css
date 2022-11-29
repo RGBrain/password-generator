@@ -1,0 +1,105 @@
+/* Set variables  */
+
+:root {
+    --dark-grey: #1F2937;
+    --very-dark-grey: #2F3E53;
+    --white: #ffffff;
+    --green: #4ADF86;
+    --orange: #F59E0B;
+  }
+
+body {
+
+    font-family: 'karla', Helvetica, arial, sans-serif;
+    background-color: black;
+    color: var(--white);
+}
+.container {
+    background-color: var(--dark-grey);
+    height: 550px;
+    width: 550px;
+    /* display: flex; */
+    margin: auto;
+    position: relative;
+}
+
+h1,
+h2 {
+    position: relative;
+    top: 120px;
+    align-items: center;
+    font-size: 40px;
+    line-height: 40px;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 50px;
+    /* border: solid white; */
+    width: 400px;
+}
+h2 {
+    color: var(--green);
+}
+
+.hero-section {
+    align-items: center;
+}
+
+.color-change {
+    color: var(--green);
+}
+
+.tagline {
+    position: relative;
+    top: 100px;
+    padding: 10px;
+    margin-left: 50px;
+    font-family: 'Inter', sans-serif;
+}
+button {
+    position: relative;
+    top: 125px;
+    margin-left: 60px;
+    padding: 10px;
+}
+
+.line {
+    border-bottom: var(--very-dark-grey) solid 2px;
+    margin: auto;
+    position: relative;
+    width: 78%;
+    top: 180px;
+}
+
+output {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* TODO - Sort placement of output password fields */
+.passwordOutput {
+    background-color: var(--very-dark-grey);
+    width: 200px;
+    height: 40px;
+    top: 190px;
+    position: relative;
+    border-radius: 6px;
+    clear: both;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.passwordOne {
+    float: left;
+}
+.passwordTwo {
+    margin-left: 160px;
+    float: right;
+} 
